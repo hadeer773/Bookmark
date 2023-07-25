@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+
+}
+.shadow-red:focus{
+  box-shadow: 0 0 2px 0.25rem rgba(255, 0, 0, 0.397);
+}
+.shadow-green:focus{
+  box-shadow: 0 0 2px 0.25rem rgba(0, 128, 0, 0.347);
+}
+
+::selection{
+  background-color: #FEC260;
+  color: #352e28;
+}
+
+#home {
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+
+#home h1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(53, 46, 40);
+    font-family:"Pacifico-Regular" ;
+    z-index: 10;
+}
+
+#home main h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+#home main h1:hover::before {
+    height: 50%;
+}
+
+#home .bookmark-details {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+#home .bookmark-details h2 {
+  font-family: "Righteous-Regular";
+  font-size: 25px;
+  background-image: linear-gradient(45deg, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color:transparent;
+}
+
+
+#home .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+}
+#home .input-shadow:focus{
+  box-shadow: 0 0 0 0.25rem #fec26055;
+
+}
+#home .btn-delete {
+    color: #fff;
+    background-color: #eb1d36;
+    border-color: #eb1d36;
+}
+
+#home .btn:hover {
+    color: #fff;
+    background-color: #d30820;
+    border-color: #ba081d;
+}
+
+#home .btn-submit {
+    color: #fff;
+    background-color: #d1512d;
+    border-color: #d1512d;
+}
+
+#home .btn-submit:hover {
+    color: #fff;
+    background-color: #bb4120;
+    border-color: #a03315;
+}
+
+#home .btn-visit {
+    color: #fff;
+    background-color: #9eb23b;
+    border-color: #9eb23b;
+}
+
+#home .btn-visit:hover {
+    color: #fff;
+    background-color: #8a9e23;
+    border-color: #6e8018;
+}
+
+#home table {
+  background-color: #fff;
+    vertical-align: middle !important;
+    font-family: "PTSansCaption-Bold";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+#home .box-info {
+    background-color: #0007;
+    min-height: 100vh;
+  }
+  
+#home .box-content {
+    width: 500px;
+    z-index: 10;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+#home .box-content p {
+    font-size: 21px;
+    line-height:1.3;
+    color: #352e28;
+    background-color: #fff;
+    font-family: "PTSansCaption-Bold";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    
+  }
+  
+#home .rules li {
+  font-family: "PTSansCaption-Bold";
+    font-weight: 400;
+    line-height: 27px;
+    padding-top: 10px;
+  }
+#home .rules i {
+    color: #bb4120;
+  }
+  
+#home .circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  
+#home .circles span:nth-child(1) {
+    background-color: #f15f5d;
+  }
+#home .circles span:nth-child(2) {
+    background-color: #febe2e;
+  }
+#home .circles span:nth-child(3) {
+    background-color: #4db748;
+  }
+  
+#home .logo {
+    width: 40px;
+  }
+
+
+
+
+  /* fonts */
+
+
+
+  @font-face {
+    font-family:"Pacifico-Regular" ;
+    src: url("../fonts/Pacifico-Regular.ttf");
+  }
+
+
+
+  @font-face {
+    font-family: "Righteous-Regular";
+    src: url("../fonts/Righteous-Regular.ttf");
+  }
+
+
+  @font-face {
+    font-family: "PTSansCaption-Bold";
+    src: url("../fonts/PTSansCaption-Bold.ttf");
+  }
+
+
+  @font-face {
+    font-family: "BreeSerif-Regular";
+    src: url("../fonts/BreeSerif-Regular.ttf");
+  }
